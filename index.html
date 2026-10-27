@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Krishnan P | AI Engineer & Neural Systems Architect</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Portfolio of Hari Krishnan P - AI Engineer specializing in Deepfake Neural Forensics, Local LLMs, Computer Vision, and Agentic AI Architecture.">
+    <meta name="keywords" content="Hari Krishnan, AI Engineer, Deepfake Detection, PyTorch, Hugging Face, FAISS, Computer Vision, Agentic AI, Machine Learning Portfolio">
+    <meta name="author" content="Hari Krishnan P">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+
+    <!-- Futuristic Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyber-body">
+
+    <!-- Interactive Neural Synapse Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Ambient Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Scanline Texture Overlay -->
+    <div class="cyber-scanlines"></div>
+
+    <!-------------------------- Futuristic Header / Navigation HUD -------------------------->
+    <header class="header-hud" id="header-hud">
+        <div class="hud-container">
+            <div class="hud-nav-bar">
+                
+                <!-- Brand / Logo -->
+                <a href="#home" class="cyber-logo">
+                    <span class="logo-glitch" data-text="HK//AI">HK//AI</span>
+                    <span class="logo-sub">HARI KRISHNAN</span>
+                    <span class="pulse-dot"></span>
+                </a>
+
+                <!-- Telemetry Status Pill -->
+                <div class="sys-status-badge hide-mobile">
+                    <span class="status-indicator"></span>
+                    <span class="status-text">SYS_STATUS: <span class="text-neon-cyan">ACTIVE // OPEN FOR ROLES</span></span>
+                </div>
+
+                <!-- Nav Menu Links -->
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-item active"><span class="nav-idx">01</span>// Home</a></li>
+                    <li><a href="#about" class="nav-item"><span class="nav-idx">02</span>// Dossier</a></li>
+                    <li><a href="#experience" class="nav-item"><span class="nav-idx">03</span>// Experience</a></li>
+                    <li><a href="#projects" class="nav-item"><span class="nav-idx">04</span>// AI Systems</a></li>
+                    <li><a href="#research" class="nav-item"><span class="nav-idx">05</span>// Research</a></li>
+                    <li><a href="#education" class="nav-item"><span class="nav-idx">06</span>// Education</a></li>
+                    <li><a href="#contact" class="nav-item"><span class="nav-idx">07</span>// Contact</a></li>
+                </ul>
+
+                <!-- HUD Quick Controls -->
+                <div class="hud-controls">
+                    <!-- Audio FX Toggle -->
+                    <button class="audio-toggle-btn" id="audioToggleBtn" title="Toggle Futuristic Sound FX" aria-label="Toggle Sound">
+                        <i class="fa-solid fa-volume-xmark" id="audioIcon"></i>
+                        <span class="audio-bars">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                        </span>
+                    </button>
+
+                    <!-- AI Chatbot Toggle Button -->
+                    <button class="chat-toggle-btn" id="chatToggleBtn" title="Launch AI Chatbot Assistant" aria-label="Open AI Assistant">
+                        <i class="fa-solid fa-robot"></i>
+                        <span class="hide-sm">AI BOT</span>
+                        <span class="bot-badge-dot"></span>
+                    </button>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <div class="hud-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                        <span class="ham-line"></span>
+                        <span class="ham-line"></span>
+                        <span class="ham-line"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-------------------------- Main Content Container -------------------------->
+    <main class="main-wrapper">
+
+        <!-------------------------- HERO SECTION -------------------------->
+        <section class="hero-section" id="home">
+            <div class="hud-container">
+                <div class="hero-grid">
+                    
+                    <!-- Left: Hero Intel & Directives -->
+                    <div class="hero-intel">
+                        <div class="hero-hud-badge">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>AI & MACHINE LEARNING ENGINEER</span>
+                            <span class="badge-separator">|</span>
+                            <span class="text-neon-cyan">CHENNAI, IND</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span class="title-greeting">INITIALIZING ARCHITECT</span>
+                            <span class="title-name glitch-effect" data-text="HARI KRISHNAN P">HARI KRISHNAN P</span>
+                        </h1>
+
+                        <!-- Dynamic Typing Subtitle -->
+                        <div class="typing-container">
+                            <span class="typing-prefix">&gt; specializing_in:</span>
+                            <span class="typed-text" id="typedOutput">Neural Media Forensics</span>
+                            <span class="typed-cursor">_</span>
+                        </div>
+
+                        <p class="hero-description">
+                            B.Tech graduate in <span class="highlight">Artificial Intelligence & Data Science</span> (First Class). 
+                            Architecting privacy-first, zero-cloud neural intelligence platforms across 
+                            <span class="highlight-cyan">Deepfake Detection (ResNet-18 + 2D FFT)</span>, 
+                            <span class="highlight-violet">Hugging Face Local Semantic Matchers</span>, 
+                            and <span class="highlight-green">Agentic AI Reasoning</span>. Published author in peer-reviewed international engineering journals.
+                        </p>
+
+                        <!-- HUD Metrics Row -->
+                        <div class="hero-metrics-bar">
+                            <div class="metric-item">
+                                <div class="metric-val" data-target="4">04+</div>
+                                <div class="metric-lbl">Neural Architectures</div>
+                            </div>
+                            <div class="metric-divider"></div>
+                            <div class="metric-item">
+                                <div class="metric-val" data-target="2">02</div>
+                                <div class="metric-lbl">Peer-Reviewed Papers</div>
+                            </div>
+                            <div class="metric-divider"></div>
+                            <div class="metric-item">
+                                <div class="metric-val">100%</div>
+                                <div class="metric-lbl">Local Privacy-First AI</div>
+                            </div>
+                            <div class="metric-divider"></div>
+                            <div class="metric-item">
+                                <div class="metric-val">7.35</div>
+                                <div class="metric-lbl">B.Tech First Class</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Actions -->
+                        <div class="hero-actions">
+                            <a href="#projects" class="cyber-btn cyber-btn-primary">
+                                <span class="btn-scanline"></span>
+                                <i class="fa-solid fa-brain"></i>
+                                <span>EXPLORE AI SYSTEMS</span>
+                            </a>
+                            <a href="files/Hari_KrishnanP.pdf.pdf" class="cyber-btn cyber-btn-secondary" target="_blank" download>
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>DOWNLOAD RESUME</span>
+                            </a>
+                            <button class="cyber-btn cyber-btn-ghost hide-sm" id="heroChatBtn" type="button">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>CHAT WITH AI</span>
+                            </button>
+                        </div>
+
+                        <!-- Social Grid -->
+                        <div class="hero-social-strip">
+                            <span class="social-label">DATA UPLINKS:</span>
+                            <a href="https://github.com/HKhari20" target="_blank" rel="noopener" class="social-uplink" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hari-krishnan-p2003/" target="_blank" rel="noopener" class="social-uplink" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:harikrishnan202003@gmail.com" class="social-uplink" title="Email Uplink">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Holographic Cyber Portrait -->
+                    <div class="hero-visual">
+                        <div class="cyber-avatar-frame">
+                            
+                            <!-- Rotating Tech Rings -->
+                            <div class="hud-ring ring-outer"></div>
+                            <div class="hud-ring ring-mid"></div>
+                            <div class="hud-ring ring-inner"></div>
+
+                            <!-- Corner HUD Brackets -->
+                            <div class="frame-corner top-left"></div>
+                            <div class="frame-corner top-right"></div>
+                            <div class="frame-corner bottom-left"></div>
+                            <div class="frame-corner bottom-right"></div>
+
+                            <!-- Avatar Image Container -->
+                            <div class="avatar-glow-wrapper">
+                                <img src="files\hk1.jpeg" alt="Hari Krishnan P" class="avatar-img">
+                                <div class="avatar-scanner-beam"></div>
+                            </div>
+
+                            <!-- Floating Satellite HUD Badges -->
+                            <div class="satellite-badge sat-1">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <span>PyTorch 2.x</span>
+                            </div>
+                            <div class="satellite-badge sat-2">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>Meta FAISS</span>
+                            </div>
+                            <div class="satellite-badge sat-3">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Agentic AI</span>
+                            </div>
+                            <div class="satellite-badge sat-4">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>SHA-256 Forensics</span>
+                            </div>
+
+                            <!-- Live Telemetry Card -->
+                            <div class="avatar-telemetry-hud">
+                                <div class="telemetry-row">
+                                    <span class="telemetry-label">NEURAL ENGINE:</span>
+                                    <span class="telemetry-value text-neon-cyan">ONLINE (PyTorch/Transformers)</span>
+                                </div>
+                                <div class="telemetry-row">
+                                    <span class="telemetry-label">CURRENT BASE:</span>
+                                    <span class="telemetry-value">Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------- ABOUT // DOSSIER & ARSENAL -------------------------->
+        <section class="section-wrapper" id="about">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 02 // DOSSIER ]</span>
+                    <h2 class="section-title">ENGINEER PROFILE & <span class="text-neon-cyan">TECH ARSENAL</span></h2>
+                    <div class="section-bar"></div>
+                </div>
+
+                <div class="dossier-grid">
+                    
+                    <!-- Bio Intel Card -->
+                    <div class="cyber-card dossier-bio-card reveal-left">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="card-badge">
+                            <i class="fa-solid fa-address-card"></i> BIOGRAPHICAL INTEL
+                        </div>
+
+                        <h3 class="bio-heading">Pioneering Secure, Local & High-Impact AI Systems</h3>
+
+                        <div class="bio-text">
+                            <p>
+                                I am an AI Engineer and B.Tech graduate in <strong>Artificial Intelligence and Data Science</strong> 
+                                from <strong>Erode Sengunthar Engineering College</strong> (First Class, 7.35 CGPA), currently based in <strong>Chennai, Tamil Nadu</strong>.
+                            </p>
+                            <p>
+                                My primary focus centers on <strong>Generative AI</strong>, <strong>Agentic AI</strong>, <strong>AI/ML/DL</strong>, and <strong>OpenCV / Computer Vision</strong>. 
+                                Rather than relying on black-box external cloud APIs, I architect <strong>100% locally runnable, privacy-preserving AI frameworks</strong> 
+                                combining PyTorch deep residual networks, 2D Fast Fourier Transform frequency domain analysis, and Hugging Face transformer embeddings.
+                            </p>
+                            <p>
+                                Having authored multiple peer-reviewed research papers published in indexed international engineering journals, I bridge the gap between academic AI rigor and high-performance production code.
+                            </p>
+                        </div>
+
+                        <!-- Quick Fact Matrix -->
+                        <div class="bio-meta-grid">
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-user-astronaut"></i> Name:</span>
+                                <span class="meta-val">Hari Krishnan P</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-location-dot"></i> Base:</span>
+                                <span class="meta-val">Chennai, Tamil Nadu, India</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                                <span class="meta-val">B.Tech AI & Data Science (First Class)</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-certificate"></i> Focus:</span>
+                                <span class="meta-val text-neon-cyan">Gen AI, Agentic AI, AI/ML/DL, OpenCV</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <span class="meta-val">harikrishnan202003@gmail.com</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label"><i class="fa-solid fa-phone"></i> Comms:</span>
+                                <span class="meta-val">+91 9750582800</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Tech Arsenal Grid -->
+                    <div class="cyber-card dossier-skills-card reveal-right">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+
+                        <div class="card-badge">
+                            <i class="fa-solid fa-layer-group"></i> NEURAL STACK & CAPABILITIES
+                        </div>
+
+                        <!-- Skill Category 1: Deep Learning & Computer Vision -->
+                        <div class="skill-category reveal-on-scroll delay-1">
+                            <div class="cat-header">
+                                <span class="cat-title"><i class="fa-solid fa-eye text-neon-cyan"></i> Deep Learning & Computer Vision</span>
+                                <span class="cat-tag">PRIMARY CORE</span>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="t-tag highlight-tag">PyTorch</span>
+                                <span class="t-tag highlight-tag">OpenCV</span>
+                                <span class="t-tag">ResNet-18</span>
+                                <span class="t-tag">2D-FFT Spectral Analysis</span>
+                                <span class="t-tag">Error Level Analysis (ELA)</span>
+                                <span class="t-tag">Contour Masking</span>
+                                <span class="t-tag">Image Segmentation</span>
+                                <span class="t-tag">Temporal Analysis</span>
+                            </div>
+                            <div class="skill-meter-wrap">
+                                <div class="meter-bar" data-width="95%" style="--target-width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 2: LLMs, Transformers & Agentic AI -->
+                        <div class="skill-category reveal-on-scroll delay-2">
+                            <div class="cat-header">
+                                <span class="cat-title"><i class="fa-solid fa-robot text-neon-violet"></i> LLMs, Transformers & Agentic AI</span>
+                                <span class="cat-tag">ADVANCED</span>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="t-tag highlight-tag">Hugging Face Transformers</span>
+                                <span class="t-tag highlight-tag">Sentence-Transformers</span>
+                                <span class="t-tag">Meta FAISS Vector Search</span>
+                                <span class="t-tag">LangChain</span>
+                                <span class="t-tag">T5 Summarization</span>
+                                <span class="t-tag">Dense Embeddings</span>
+                                <span class="t-tag">Agentic Tool Planning</span>
+                                <span class="t-tag">Explainable AI (XAI)</span>
+                            </div>
+                            <div class="skill-meter-wrap">
+                                <div class="meter-bar" data-width="90%" style="--target-width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 3: Machine Learning & Predictive Analytics -->
+                        <div class="skill-category reveal-on-scroll delay-3">
+                            <div class="cat-header">
+                                <span class="cat-title"><i class="fa-solid fa-chart-line text-neon-green"></i> Machine Learning & Analytics</span>
+                                <span class="cat-tag">PRODUCTION</span>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="t-tag">Scikit-Learn</span>
+                                <span class="t-tag">Pandas</span>
+                                <span class="t-tag">NumPy</span>
+                                <span class="t-tag">Logistic Regression</span>
+                                <span class="t-tag">Financial Anomaly Detection</span>
+                                <span class="t-tag">Feature Engineering</span>
+                                <span class="t-tag">Matplotlib & Seaborn</span>
+                            </div>
+                            <div class="skill-meter-wrap">
+                                <div class="meter-bar" data-width="88%" style="--target-width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 4: Engineering, Full-Stack & Systems -->
+                        <div class="skill-category reveal-on-scroll delay-4">
+                            <div class="cat-header">
+                                <span class="cat-title"><i class="fa-solid fa-server text-neon-amber"></i> Programming, Frameworks & Data</span>
+                                <span class="cat-tag">ROBUST</span>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="t-tag highlight-tag">Python (Core/Advanced)</span>
+                                <span class="t-tag">Java</span>
+                                <span class="t-tag">SQL & MySQL</span>
+                                <span class="t-tag">Flask</span>
+                                <span class="t-tag">Streamlit</span>
+                                <span class="t-tag">JavaScript / HTML5 / CSS3</span>
+                                <span class="t-tag">Node.js</span>
+                                <span class="t-tag">Power BI</span>
+                                <span class="t-tag">SHA-256 Hashing</span>
+                                <span class="t-tag">Git / GitHub</span>
+                            </div>
+                            <div class="skill-meter-wrap">
+                                <div class="meter-bar" data-width="85%" style="--target-width: 85%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------- WORK EXPERIENCE // INTERNSHIPS -------------------------->
+        <section class="section-wrapper" id="experience">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 03 // CAREER TRAJECTORY ]</span>
+                    <h2 class="section-title">WORK EXPERIENCE & <span class="text-neon-cyan">INTERNSHIPS</span></h2>
+                    <p class="section-subtitle">Real-world engineering, full-stack development, and computer vision / AI operations.</p>
+                    <div class="section-bar"></div>
+                </div>
+
+                <div class="cyber-timeline">
+                    
+                    <!-- Timeline Item 1: Project Engineer at Pantech -->
+                    <div class="timeline-cyber-card reveal-on-scroll">
+                        <div class="t-marker">
+                            <div class="t-dot"></div>
+                            <div class="t-pulse"></div>
+                        </div>
+                        <div class="t-content">
+                            <div class="t-header">
+                                <div class="t-role-info">
+                                    <span class="t-badge badge-active">CURRENT ROLE</span>
+                                    <h3 class="t-title">Project Engineer</h3>
+                                    <h4 class="t-company"><i class="fa-solid fa-microchip"></i> Pantech</h4>
+                                </div>
+                                <div class="t-date">
+                                    <i class="fa-regular fa-calendar-days"></i> July 2026 – Present
+                                    <span class="t-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                                </div>
+                            </div>
+                            <p class="t-desc">
+                                Spearheading engineering implementations in Generative AI, Agentic AI, Computer Vision, and Edge AI intelligence systems. Designing and deploying real-world solutions and industry-grade AI pipelines.
+                            </p>
+                            <ul class="t-bullets">
+                                <li>Engineering production-grade AI/ML/DL models, OpenCV pipelines, and autonomous agentic workflows tailored for industrial and edge applications.</li>
+                                <li>Developing end-to-end computer vision solutions, deep learning inferencing, and Generative AI integrations.</li>
+                                <li>Driving project execution, hands-on architectural implementations, and advanced technical engineering initiatives.</li>
+                            </ul>
+                            <div class="t-tags">
+                                <span>Gen AI</span>
+                                <span>Agentic AI</span>
+                                <span>AI/ML/DL</span>
+                                <span>OpenCV</span>
+                                <span>Python</span>
+                                <span>Project Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: 8Queens Software Technologies -->
+                    <div class="timeline-cyber-card reveal-on-scroll delay-1">
+                        <div class="t-marker">
+                            <div class="t-dot"></div>
+                        </div>
+                        <div class="t-content">
+                            <div class="t-header">
+                                <div class="t-role-info">
+                                    <span class="t-badge badge-completed">COMPLETED // INTERN</span>
+                                    <h3 class="t-title">Full Stack Web Development Intern</h3>
+                                    <h4 class="t-company"><i class="fa-solid fa-building"></i> 8Queens Software Technologies Private Limited</h4>
+                                </div>
+                                <div class="t-date">
+                                    <i class="fa-regular fa-calendar-days"></i> July 2023 – August 2023
+                                    <span class="t-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                                </div>
+                            </div>
+                            <p class="t-desc">
+                                Contributed to client-facing web application development, building interactive front-end components and robust back-end service integrations.
+                            </p>
+                            <ul class="t-bullets">
+                                <li>Developed dynamic, responsive web interfaces using HTML5, CSS3, JavaScript, and Node.js backend integration.</li>
+                                <li>Designed and connected API endpoints for seamless database communication and real-time state synchronization.</li>
+                                <li>Participated in code reviews, bug fixes, and performance optimization for web deployment.</li>
+                            </ul>
+                            <div class="t-tags">
+                                <span>Full Stack</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>HTML5 / CSS3</span>
+                                <span>API Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: NSIC -->
+                    <div class="timeline-cyber-card reveal-on-scroll delay-2">
+                        <div class="t-marker">
+                            <div class="t-dot"></div>
+                        </div>
+                        <div class="t-content">
+                            <div class="t-header">
+                                <div class="t-role-info">
+                                    <span class="t-badge badge-completed">COMPLETED // INTERN</span>
+                                    <h3 class="t-title">Mobile Application Development Intern</h3>
+                                    <h4 class="t-company"><i class="fa-solid fa-landmark"></i> National Small Industries Corporation (NSIC)</h4>
+                                </div>
+                                <div class="t-date">
+                                    <i class="fa-regular fa-calendar-days"></i> January 2023
+                                    <span class="t-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                                </div>
+                            </div>
+                            <p class="t-desc">
+                                Hands-on engineering in native Android application development, mobile UI architecture, and Java application lifecycle components.
+                            </p>
+                            <ul class="t-bullets">
+                                <li>Designed and deployed native Android user interfaces with XML layouts and Java event handlers.</li>
+                                <li>Gained in-depth knowledge of Android activity lifecycles, intent routing, and local data persistence.</li>
+                                <li>Built practical mobile application prototypes tested on physical and virtual Android devices.</li>
+                            </ul>
+                            <div class="t-tags">
+                                <span>Android SDK</span>
+                                <span>Java</span>
+                                <span>XML Layouts</span>
+                                <span>Mobile UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------- AI SYSTEMS & PROJECTS (ONLY AI PROJECTS) -------------------------->
+        <section class="section-wrapper" id="projects">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 04 // NEURAL REPOSITORIES ]</span>
+                    <h2 class="section-title">FEATURED <span class="text-neon-cyan">AI SYSTEMS</span></h2>
+                    <p class="section-subtitle">Exclusively advanced Artificial Intelligence, Neural Forensics, Local Transformers, and Agentic AI.</p>
+                    <div class="section-bar"></div>
+                </div>
+
+                <!-- Filter Matrix Chips -->
+                <div class="project-filter-chips">
+                    <button class="filter-chip active" data-filter="all">ALL AI ARCHITECTURES</button>
+                    <button class="filter-chip" data-filter="cv-forensics">DEEP LEARNING & FORENSICS</button>
+                    <button class="filter-chip" data-filter="llm-transformers">LLMS & VECTOR SEARCH</button>
+                    <button class="filter-chip" data-filter="agentic-ml">AGENTIC AI & PREDICTIVE ML</button>
+                </div>
+
+                <!-- Projects Cyber Grid -->
+                <div class="projects-cyber-grid">
+                    
+                    <!-- Project 1: DeepScan AI -->
+                    <div class="cyber-project-card reveal-on-scroll delay-1" data-category="cv-forensics">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-flagship">
+                                <i class="fa-solid fa-shield-virus"></i> FLAGSHIP FORENSICS
+                            </div>
+                            <div class="p-links">
+                                <a href="https://github.com/HKhari20/AI-deepfake-detection" target="_blank" rel="noopener" class="p-link-icon" title="View GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">DeepScan AI: Neural Media Forensics & Deepfake Detection Platform</h3>
+                            <div class="p-category text-neon-cyan"><i class="fa-solid fa-microchip"></i> PyTorch ResNet-18 // 2D-FFT Spectral // SHA-256</div>
+                            
+                            <p class="p-desc">
+                                A world-class, multi-page forensic intelligence platform detecting synthetic faces, deepfake videos, and manipulated images. 
+                                Powered by a hybrid pipeline fusing <strong>PyTorch ResNet-18</strong>, <strong>2D Fast Fourier Transform (FFT)</strong> frequency domain analysis, 
+                                <strong>Error Level Analysis (ELA)</strong>, and <strong>Cryptographic SHA-256 Chain of Custody</strong>.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Temporal Trajectory manipulation graph exposing face-swap flicker</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> 100% Local Inference with zero external cloud dependencies</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Live webcam analysis & bulk forensic batch ingestion</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>PyTorch</span>
+                                <span>OpenCV</span>
+                                <span>ResNet-18</span>
+                                <span>2D-FFT</span>
+                                <span>Flask</span>
+                                <span>TailwindCSS</span>
+                            </div>
+                            <a href="https://github.com/HKhari20/AI-deepfake-detection" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>LAUNCH REPO</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: NeuralScreen AI -->
+                    <div class="cyber-project-card reveal-on-scroll delay-2" data-category="llm-transformers">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-nlp">
+                                <i class="fa-solid fa-brain"></i> LOCAL TRANSFORMERS
+                            </div>
+                            <div class="p-links">
+                                <a href="https://github.com/HKhari20/AI-resume-screening-system" target="_blank" rel="noopener" class="p-link-icon" title="View GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">NeuralScreen AI: Local Resume Screening & Semantic Vector Matcher</h3>
+                            <div class="p-category text-neon-violet"><i class="fa-solid fa-bolt"></i> Hugging Face T5 // Sentence-Transformers // Meta FAISS</div>
+                            
+                            <p class="p-desc">
+                                A cutting-edge AI recruitment intelligence platform running <strong>100% locally</strong> to guarantee strict candidate confidentiality. 
+                                Standardizes noisy resumes into high-signal executive briefs using <strong>Hugging Face T5</strong>, converts documents into 
+                                <strong>384-dimensional dense vectors</strong>, and executes instant cosine similarity ranking with <strong>Meta FAISS</strong>.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Hugging Face sequence-to-sequence summarization pipeline</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Automated skill gap extraction matching qualifications against job descriptions</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Cyber-luminescent glassmorphism UI with interactive radial progress meters</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>Hugging Face T5</span>
+                                <span>Sentence-Transformers</span>
+                                <span>Meta FAISS</span>
+                                <span>Flask</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="https://github.com/HKhari20/AI-resume-screening-system" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>LAUNCH REPO</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Explainable Agentic AI for Finance -->
+                    <div class="cyber-project-card reveal-on-scroll delay-3" data-category="agentic-ml">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-agentic">
+                                <i class="fa-solid fa-network-wired"></i> AUTONOMOUS AGENTS
+                            </div>
+                            <div class="p-links">
+                                <span class="p-link-icon text-neon-green" title="Research Architecture"><i class="fa-solid fa-diagram-project"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">Explainable Agentic AI for Banking & Financial Services</h3>
+                            <div class="p-category text-neon-green"><i class="fa-solid fa-scale-balanced"></i> LangChain // Agent Planning // Explainable AI (XAI)</div>
+                            
+                            <p class="p-desc">
+                                Autonomous multi-agent reasoning framework for banking, loan eligibility assessment, and financial advisory. 
+                                Deploys autonomous LLM agents equipped with computational tools for credit evaluation and debt-to-income (DTI) computation, 
+                                paired with an <strong>XAI Dashboard</strong> that visualizes the agent's chain-of-thought, tool observations, and audit trails.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Multi-step autonomous planning resolving complex multi-tool financial workflows</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Transparent Explainable AI dashboard satisfying strict regulatory auditing</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Python, Streamlit, and LangChain orchestration architecture</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>Agentic AI</span>
+                                <span>LangChain</span>
+                                <span>LLMs</span>
+                                <span>Streamlit</span>
+                                <span>XAI Dashboard</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="#about" class="p-cta-btn">
+                                <span>VIEW SPECS</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: CardioPredict AI -->
+                    <div class="cyber-project-card reveal-on-scroll delay-1" data-category="agentic-ml">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-published">
+                                <i class="fa-solid fa-book-journal-whills"></i> PUBLISHED IN IRJAEH
+                            </div>
+                            <div class="p-links">
+                                <a href="https://github.com/HKhari20/ML-Project-9-Heart-Disease-Prediction-WebApp" target="_blank" rel="noopener" class="p-link-icon" title="View GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">CardioPredict AI: Clinical Heart Disease Diagnostic System</h3>
+                            <div class="p-category text-neon-amber"><i class="fa-solid fa-heart-pulse"></i> Scikit-Learn // Biomedical ML // Streamlit</div>
+                            
+                            <p class="p-desc">
+                                Clinical predictive machine learning platform analyzing 14 cardiovascular and hemodynamic parameters (including chest pain type, ST segment slopes, and cholesterol levels) to accurately predict coronary heart disease risks. 
+                                Backed by published peer-reviewed research in <strong>IRJAEH (DOI: 10.47392/IRJAEH.2025.0129)</strong>.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Complete ML pipeline: data preprocessing, outlier removal, and validation</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Streamlit web interface with real-time biometric risk classification</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Published in International Research Journal on Advanced Engineering Hub</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>Machine Learning</span>
+                                <span>Scikit-Learn</span>
+                                <span>Streamlit</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                            </div>
+                            <a href="https://github.com/HKhari20/ML-Project-9-Heart-Disease-Prediction-WebApp" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>LAUNCH REPO</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Computer Vision Smart Parking -->
+                    <div class="cyber-project-card reveal-on-scroll delay-2" data-category="cv-forensics">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-published">
+                                <i class="fa-solid fa-book-journal-whills"></i> PUBLISHED IN IRJAEH
+                            </div>
+                            <div class="p-links">
+                                <a href="https://doi.org/10.47392/IRJAEH.2024.0389" target="_blank" rel="noopener" class="p-link-icon" title="View Published Paper">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">Computer Vision Smart Parking & Space Occupancy Detection</h3>
+                            <div class="p-category text-neon-cyan"><i class="fa-solid fa-camera"></i> OpenCV // Real-Time Video // Contour Detection</div>
+                            
+                            <p class="p-desc">
+                                Real-time automated vehicle space occupancy tracking system utilizing computer vision techniques. 
+                                Analyzes live video streams using grayscale conversion, adaptive thresholding, contour extraction, and spatial masking to dynamically calculate free vs. occupied parking slots with minimal latency.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Automated spot occupancy classification and vacancy alerts</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Optimized video feed processing pipeline for edge deployment</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Published in IRJAEH Vol. 02, Issue 12 (DOI: 10.47392/IRJAEH.2024.0389)</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>OpenCV</span>
+                                <span>Computer Vision</span>
+                                <span>Python</span>
+                                <span>Contour Masking</span>
+                                <span>Video Processing</span>
+                            </div>
+                            <a href="https://doi.org/10.47392/IRJAEH.2024.0389" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>READ PAPER</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: AML Intelligence -->
+                    <div class="cyber-project-card reveal-on-scroll delay-3" data-category="agentic-ml">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-nlp">
+                                <i class="fa-solid fa-shield-halved"></i> FINANCIAL AI
+                            </div>
+                            <div class="p-links">
+                                <a href="https://github.com/HKhari20/Anti-money-laundering" target="_blank" rel="noopener" class="p-link-icon" title="View GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">AML Intelligence: Machine Learning Anti-Money Laundering Framework</h3>
+                            <div class="p-category text-neon-green"><i class="fa-solid fa-magnifying-glass-chart"></i> Anomaly Detection // Scikit-Learn // Fraud Prevention</div>
+                            
+                            <p class="p-desc">
+                                Advanced machine learning framework engineered for financial crime detection and anti-money laundering (AML). 
+                                Employs predictive classification and unsupervised anomaly detection algorithms to flag suspicious transaction sequences, illicit structuring, and outlier behaviors in banking records.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> High-dimensional transaction vector anomaly scoring</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Pattern identification for complex layering and structuring tactics</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Scalable Python and Scikit-Learn data processing architecture</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>Machine Learning</span>
+                                <span>Scikit-Learn</span>
+                                <span>Anomaly Detection</span>
+                                <span>Pandas</span>
+                                <span>Python</span>
+                            </div>
+                            <a href="https://github.com/HKhari20/Anti-money-laundering" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>LAUNCH REPO</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Conversational AI & FAQ Intelligence -->
+                    <div class="cyber-project-card reveal-on-scroll delay-1" data-category="llm-transformers">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="p-card-header">
+                            <div class="p-badge p-badge-nlp">
+                                <i class="fa-solid fa-comments"></i> NLP ASSISTANT
+                            </div>
+                            <div class="p-links">
+                                <a href="https://github.com/HKhari20/chatbot" target="_blank" rel="noopener" class="p-link-icon" title="View GitHub Repository">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-card-body">
+                            <h3 class="p-title">Conversational AI & FAQ Intelligence System</h3>
+                            <div class="p-category text-neon-violet"><i class="fa-solid fa-robot"></i> Streamlit // NLP Query Matching // Generative AI</div>
+                            
+                            <p class="p-desc">
+                                Interactive conversational intelligence assistant leveraging natural language processing and generative language model architectures. 
+                                Implements session-state persistence, user prompt normalization, and semantic query matching to deliver low-latency contextual responses.
+                            </p>
+
+                            <div class="p-features">
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Real-time streaming conversational interface with Streamlit</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Natural language query understanding and intent disambiguation</div>
+                                <div class="feature-item"><i class="fa-solid fa-check text-neon-green"></i> Scalable Python codebase structured for domain-specific knowledge ingestion</div>
+                            </div>
+                        </div>
+
+                        <div class="p-card-footer">
+                            <div class="p-tech-stack">
+                                <span>NLP</span>
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Generative AI</span>
+                                <span>Semantic Search</span>
+                            </div>
+                            <a href="https://github.com/HKhari20/chatbot" target="_blank" rel="noopener" class="p-cta-btn">
+                                <span>LAUNCH REPO</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------- RESEARCH & PUBLICATIONS -------------------------->
+        <section class="section-wrapper" id="research">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 05 // ACADEMIC RIGOR ]</span>
+                    <h2 class="section-title">RESEARCH & <span class="text-neon-cyan">PUBLICATIONS</span></h2>
+                    <p class="section-subtitle">Peer-reviewed international journal publications and conference presentations.</p>
+                    <div class="section-bar"></div>
+                </div>
+
+                <div class="research-grid">
+                    
+                    <!-- Paper 1 -->
+                    <div class="cyber-card research-card reveal-left">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="r-badge-row">
+                            <span class="r-type-badge"><i class="fa-solid fa-scroll"></i> JOURNAL ARTICLE</span>
+                            <span class="r-date-badge"><i class="fa-regular fa-calendar-check"></i> DEC 2024</span>
+                        </div>
+
+                        <h3 class="r-title">Smart Parking System with Computer Vision</h3>
+                        <h4 class="r-author"><strong>Hari Krishnan P</strong></h4>
+                        
+                        <div class="r-journal-meta">
+                            <span class="r-journal">International Research Journal on Advanced Engineering Hub (IRJAEH)</span>
+                            <span class="r-issn">ISSN: 2584-2137 | Vol. 02, Issue 12, pp. 2816–2820</span>
+                        </div>
+
+                        <p class="r-abstract">
+                            Investigates real-time visual parking space classification using computer vision techniques, grayscale thresholding, contour extraction, and spatial masking to eliminate manual search delays in urban transit hubs.
+                        </p>
+
+                        <div class="r-doi-box">
+                            <span class="doi-label">DOI:</span>
+                            <a href="https://doi.org/10.47392/IRJAEH.2024.0389" target="_blank" rel="noopener" class="doi-link">
+                                10.47392/IRJAEH.2024.0389 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Paper 2 -->
+                    <div class="cyber-card research-card reveal-on-scroll delay-1">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="r-badge-row">
+                            <span class="r-type-badge"><i class="fa-solid fa-scroll"></i> JOURNAL ARTICLE</span>
+                            <span class="r-date-badge"><i class="fa-regular fa-calendar-check"></i> MAR 2025</span>
+                        </div>
+
+                        <h3 class="r-title">AI-Based Heart Disease Detection Using Machine Learning</h3>
+                        <h4 class="r-author"><strong>Hari Krishnan P</strong></h4>
+                        
+                        <div class="r-journal-meta">
+                            <span class="r-journal">International Research Journal on Advanced Engineering Hub (IRJAEH)</span>
+                            <span class="r-issn">ISSN: 2584-2137 | Vol. 03, Issue 03, pp. 902–907</span>
+                        </div>
+
+                        <p class="r-abstract">
+                            Presents an end-to-end predictive machine learning model for coronary disease risk scoring across 14 biometric variables, demonstrating high predictive accuracy and clinical interpretability.
+                        </p>
+
+                        <div class="r-doi-box">
+                            <span class="doi-label">DOI:</span>
+                            <a href="https://doi.org/10.47392/IRJAEH.2025.0129" target="_blank" rel="noopener" class="doi-link">
+                                10.47392/IRJAEH.2025.0129 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Conference Presentations -->
+                    <div class="cyber-card conference-card reveal-right delay-2">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="r-badge-row">
+                            <span class="r-type-badge"><i class="fa-solid fa-chalkboard-user"></i> CONFERENCES</span>
+                        </div>
+
+                        <h3 class="r-title">International Conference Presentations</h3>
+
+                        <div class="conf-items">
+                            <div class="conf-item">
+                                <div class="conf-dot"></div>
+                                <div class="conf-info">
+                                    <h4 class="conf-title">Fourth International Conference on Modern Computing Trends and Technology (ICMCTT-IV 2024)</h4>
+                                    <div class="conf-date"><i class="fa-regular fa-calendar"></i> November 28 & 29, 2024</div>
+                                    <p class="conf-desc">Presented technical research paper exploring modern computing advancements and intelligent systems.</p>
+                                </div>
+                            </div>
+
+                            <div class="conf-item">
+                                <div class="conf-dot"></div>
+                                <div class="conf-info">
+                                    <h4 class="conf-title">International Conference on Engineering, Science and Management (ICESM 2025)</h4>
+                                    <div class="conf-date"><i class="fa-regular fa-calendar"></i> March 11 & 12, 2025</div>
+                                    <p class="conf-desc">Presented research on AI-augmented predictive modeling and data science methodologies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------- EDUCATION -------------------------->
+        <section class="section-wrapper" id="education">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 06 // ACADEMIC FOUNDATION ]</span>
+                    <h2 class="section-title">EDUCATION & <span class="text-neon-cyan">CREDENTIALS</span></h2>
+                    <div class="section-bar"></div>
+                </div>
+
+                <div class="education-grid">
+                    
+                    <!-- B.Tech Degree -->
+                    <div class="cyber-card edu-card active-card reveal-on-scroll delay-1">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+                        
+                        <div class="edu-top">
+                            <span class="edu-badge"><i class="fa-solid fa-graduation-cap"></i> FIRST CLASS DEGREE</span>
+                            <span class="edu-years">2021 – 2025</span>
+                        </div>
+
+                        <h3 class="edu-degree">B.Tech in Artificial Intelligence & Data Science</h3>
+                        <h4 class="edu-institution">Erode Sengunthar Engineering College</h4>
+                        
+                        <div class="edu-score-chip">
+                            <span class="score-label">CGPA:</span>
+                            <span class="score-val">7.35 / 10.0 (First Class)</span>
+                        </div>
+
+                        <p class="edu-summary">
+                            Comprehensive 4-year technical curriculum covering Deep Learning, Machine Learning, Computer Vision, Natural Language Processing, Data Structures & Algorithms, Database Engineering, and Software Architecture.
+                        </p>
+                    </div>
+
+                    <!-- Higher Secondary (12th) -->
+                    <div class="cyber-card edu-card reveal-on-scroll delay-2">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+
+                        <div class="edu-top">
+                            <span class="edu-badge"><i class="fa-solid fa-school"></i> HIGHER SECONDARY (HSC)</span>
+                            <span class="edu-years">2021</span>
+                        </div>
+
+                        <h3 class="edu-degree">Higher Secondary Certificate (XII)</h3>
+                        <h4 class="edu-institution">St. Antony's Matriculation Higher Secondary School, Tuticorin</h4>
+                        
+                        <div class="edu-score-chip">
+                            <span class="score-label">SCORE:</span>
+                            <span class="score-val">84.5%</span>
+                        </div>
+
+                        <p class="edu-summary">
+                            Rigorous foundation in Mathematics, Physics, Chemistry, and Computer Science with distinguished academic performance.
+                        </p>
+                    </div>
+
+                    <!-- Secondary School (10th) -->
+                    <div class="cyber-card edu-card reveal-on-scroll delay-3">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+
+                        <div class="edu-top">
+                            <span class="edu-badge"><i class="fa-solid fa-award"></i> SECONDARY SCHOOL (SSLC)</span>
+                            <span class="edu-years">2019</span>
+                        </div>
+
+                        <h3 class="edu-degree">Secondary School Leaving Certificate (X)</h3>
+                        <h4 class="edu-institution">St. Antony's Matriculation Higher Secondary School, Tuticorin</h4>
+                        
+                        <div class="edu-score-chip">
+                            <span class="score-label">SCORE:</span>
+                            <span class="score-val">83.4%</span>
+                        </div>
+
+                        <p class="edu-summary">
+                            Foundational science, mathematics, and analytical reasoning principles.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------- CONTACT // DIRECT COMMS -------------------------->
+        <section class="section-wrapper" id="contact">
+            <div class="hud-container">
+                
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">[ 07 // DIRECT COMMS ]</span>
+                    <h2 class="section-title">GET IN <span class="text-neon-cyan">TOUCH</span></h2>
+                    <p class="section-subtitle">Reach out directly for AI Engineering opportunities, collaborative initiatives, or technical consultations.</p>
+                    <div class="section-bar"></div>
+                </div>
+
+                <div class="contact-hud-single">
+                    
+                    <!-- Direct Contact Telemetry Card -->
+                    <div class="cyber-card contact-info-card reveal-on-scroll">
+                        <div class="card-hud-corner corner-tl"></div>
+                        <div class="card-hud-corner corner-br"></div>
+
+                        <div class="card-badge"><i class="fa-solid fa-tower-broadcast"></i> DIRECT CHANNELS</div>
+
+                        <h3 class="contact-heading">Let's Connect & Build Intelligent Systems</h3>
+                        <p class="contact-subtext">
+                            Open for AI / ML / DL Engineering roles, Generative & Agentic AI solutions, and OpenCV projects.
+                        </p>
+
+                        <div class="telemetry-channels">
+                            
+                            <a href="mailto:harikrishnan202003@gmail.com" class="channel-row">
+                                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">EMAIL ADDRESS</span>
+                                    <span class="channel-val">harikrishnan202003@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919750582800" class="channel-row">
+                                <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">PHONE / DIRECT LINE</span>
+                                    <span class="channel-val">+91 9750582800</span>
+                                </div>
+                            </a>
+
+                            <div class="channel-row">
+                                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="channel-details">
+                                    <span class="channel-label">GEOGRAPHIC LOCATION</span>
+                                    <span class="channel-val">Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Uplinks -->
+                        <div class="social-channels-hud">
+                            <span class="social-hud-label">VERIFIED PROFILES:</span>
+                            <div class="social-icons-row">
+                                <a href="https://github.com/HKhari20" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hari-krishnan-p2003/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:harikrishnan202003@gmail.com" class="social-btn" title="Direct Email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>Email Uplink</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Resume Download CTA -->
+                        <div class="resume-download-box">
+                            <a href="files/Hari_KrishnanP.pdf.pdf" class="cyber-btn cyber-btn-primary full-width" target="_blank" download>
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <span>DOWNLOAD UPDATED RESUME (PDF)</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Cyber AI Chatbot Launcher -->
+    <div class="chat-fab-btn" id="chatFabBtn" title="Chat with Hari's AI Assistant" aria-label="Open AI Assistant">
+        <div class="chat-fab-pulse"></div>
+        <div class="chat-fab-inner">
+            <i class="fa-solid fa-robot"></i>
+            <span class="chat-fab-label hide-sm">AI ASSISTANT</span>
+            <span class="chat-fab-live-dot"></span>
+        </div>
+    </div>
+
+    <!-- Floating Holographic Chatbot Window -->
+    <div class="cyber-chatbot-window" id="cyberChatbot" aria-hidden="true">
+        <div class="chatbot-header">
+            <div class="bot-avatar-group">
+                <div class="bot-avatar-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="bot-header-info">
+                    <div class="bot-name">HK//AI BOT <span class="bot-status-tag">ONLINE</span></div>
+                    <div class="bot-subtitle">Pantech Project Engineer Intel</div>
+                </div>
+            </div>
+            <div class="bot-header-actions">
+                <button class="bot-action-btn" id="botResetBtn" title="Reset Conversation" aria-label="Reset Conversation"><i class="fa-solid fa-rotate-left"></i></button>
+                <button class="bot-action-btn" id="botCloseBtn" title="Close Chatbot" aria-label="Close Chatbot"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <!-- Quick Chips Bar inside Chat -->
+        <div class="chatbot-chips">
+            <button class="chat-chip" data-query="current role">💼 Role</button>
+            <button class="chat-chip" data-query="projects">🚀 AI Projects</button>
+            <button class="chat-chip" data-query="skills">🎯 Core Skills</button>
+            <button class="chat-chip" data-query="research">🔬 Publications</button>
+            <button class="chat-chip" data-query="contact">📬 Contact</button>
+            <button class="chat-chip" data-query="scan">🛡️ Scan Media</button>
+        </div>
+
+        <!-- Chat Message Stream -->
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="chat-msg bot-msg">
+                <div class="msg-bubble">
+                    <div class="msg-sender"><i class="fa-solid fa-robot"></i> HK//AI ASSISTANT</div>
+                    <div class="msg-text">
+                        Greetings! I'm Hari's Neural AI Assistant. Ask me about his role as <strong>Project Engineer at Pantech</strong>, his flagship <strong>AI & Deep Learning platforms</strong> (DeepScan AI, NeuralScreen AI), peer-reviewed <strong>IRJAEH research</strong>, or direct contact in Chennai.
+                    </div>
+                    <div class="msg-time">Online</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Input Bar -->
+        <form class="chatbot-input-bar" id="chatForm">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask about Hari's AI work or projects..." autocomplete="off">
+            <button type="submit" class="chat-send-btn" title="Send message" aria-label="Send message">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-------------------------- FUTURISTIC FOOTER HUD -------------------------->
+    <footer class="cyber-footer">
+        <div class="hud-container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <div class="f-logo">HARI KRISHNAN // AI</div>
+                    <div class="f-tagline">Architecting high-assurance, local neural intelligence platforms.</div>
+                </div>
+
+                <div class="footer-telemetry">
+                    <div class="t-block">
+                        <span class="t-title">SYSTEM CLOCK (IST):</span>
+                        <span class="t-time text-neon-cyan" id="liveClock">--:--:--</span>
+                    </div>
+                    <div class="t-block">
+                        <span class="t-title">LOCATION NODE:</span>
+                        <span class="t-val">Chennai [13.0827° N, 80.2707° E]</span>
+                    </div>
+                </div>
+
+                <div class="footer-rights">
+                    <div class="copyright">&copy; 2026 Hari Krishnan P. All Rights Reserved.</div>
+                    <div class="designed-by">Designed with Future-Forward Cybernetics & Neural Precision.</div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
